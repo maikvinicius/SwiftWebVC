@@ -70,6 +70,7 @@ public class SwiftWebVC: UIViewController {
         var tempWebView = WKWebView(frame: UIScreen.main.bounds)
         tempWebView.uiDelegate = self
         tempWebView.navigationDelegate = self
+        tempWebView.configuration.preferences.javaScriptEnabled = true
         return tempWebView;
     }()
     
